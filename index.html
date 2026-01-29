@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>守护青绿 | 简约环保生活</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2d3436;
+            background-color: #f9fbf9; /* 极淡的绿色底 */
+            line-height: 1.6;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #27ae60;
+        }
+
+        /* 主视觉区域 */
+        .hero {
+            padding: 80px 10%;
+            text-align: center;
+            background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), 
+                        url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #1b4d3e;
+        }
+
+        /* 特色板块 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 10%;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+            border-bottom: 4px solid #27ae60;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        /* 按钮 */
+        .btn {
+            background-color: #27ae60;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #219150;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #2d3436;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌿 EcoLife</div>
+        <nav>
+            <small>首页 / 关于 / 行动</small>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>为地球，留住那一抹绿</h1>
+        <p>每一次微小的选择，都是对未来的一份承诺。加入我们的极简环保行动。</p>
+        <a href="#" class="btn">立即加入</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <div class="icon">♻️</div>
+            <h3>减少浪费</h3>
+            <p>拒绝一次性塑料，拥抱可循环使用的生活美学。</p>
+        </div>
+        <div class="card">
+            <div class="icon">🚲</div>
+            <h3>绿色出行</h3>
+            <p>多步行或骑行，感受城市呼吸的同时减少碳排放。</p>
+        </div>
+        <div class="card">
+            <div class="icon">🌱</div>
+            <h3>素食尝试</h3>
+            <p>每周一日素食，为减轻地球负担出一份力。</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 EcoLife 简约环保项目 | 保护环境，从你我做起</p>
+    </footer>
+
+</body>
+</html>
